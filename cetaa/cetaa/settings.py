@@ -55,7 +55,7 @@ ROOT_URLCONF = 'cetaa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/Shameer/workspace/cetaa/templates'],
+        'DIRS': ['/Users/Shameer/workspace/cetaa/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
