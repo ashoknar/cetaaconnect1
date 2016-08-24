@@ -1,156 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        {% load static %}
-        <meta charset="utf-8">
-        <title>CETAA</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETAA</title>
 
-        <!-- CSS -->
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-        <link rel="stylesheet" href="{% static "home/assets/bootstrap/css/bootstrap.min.css" %}">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="assets/css/social-icons.css">
-        <link rel="stylesheet" href="assets/css/coming-soon-style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static "/home/css/bootstrap.min.css" %}" rel="stylesheet">
 
-    </head>
+    <!-- Custom CSS -->
+    <link href="{% static "/home/css/landing-page.css" %}" rel="stylesheet">
 
-    <body>
+    <!-- Custom Fonts -->
+    <link href="{% static "/home/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-        <!-- Header -->
-        <div class="container">
-            <div class="header row">
-                <div class="logo span4">
-                    <h2><a href="">Produkta</a></h2>
-                </div>
-                <div class="tel-skype span8">
-                    <p><i class="icon-phone-sign"></i> Phone: 0039 123 45 679 <span class="pipe">|</span> <i class="icon-user"></i> Skype: hello@domain.com</p>
-                </div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">CETAA</a>
             </div>
-        </div>
-
-        <!-- Coming Soon -->
-        <div class="product-showcase">
-            <div class="product-showcase-pattern">
-                <div class="container">
-                    <div class="row">
-                        <div class="span12 product-background">
-                            <div class="row">
-                                <div class="span6">
-                                    <h1>We are <strong>coming soon</strong></h1>
-                                    <div class="product-description">
-                                        <div class="timer">
-                                            <span class="days"></span> days /
-                                            <span class="hours"></span> hours /
-                                            <span class="minutes"></span> minutes /
-                                            <span class="seconds"></span> seconds
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="span6">
-                                    <div class="product-description product-description-right">
-                                        <p>We are working very hard on the new version of our site. It will bring a lot of new features. Enter your email in the form below and we’ll notify you as soon as we’re ready:</p>
-                                        <form action="assets/subscribe.php" method="post" class="subscribe">
-                                            <input type="text" name="email" class="email" placeholder="Enter your email">
-                                            <button type="submit">Subscribe!</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#back2cet">Back2CET</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#register">Register</a>
+                </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
+    </nav>
 
-        <!-- Content -->
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
         <div class="container">
 
             <div class="row">
-                <div class="span12">
-                    <!-- about us -->
-                    <div class="about-us_2">
-                        <h3>About Us</h3>
-                        <h5>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>CETAA</h1>
+                        <h3>Alumni Association of The College of Engineering Trivandrum</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="#back2cet" class="btn btn-default btn-lg"><i class="fa fa-arrow-left fa-fw"></i> <span class="network-name">Back2CET</span></a>
+                            </li>
+                            <li>
+                                <a href="#register" class="btn btn-default btn-lg"><i class="fa fa-key fa-fw"></i> <span class="network-name">Register</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div> <!-- end row -->
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">About CETAA:</h2>
+                    <p>CETAA, was formed in 1976 with the aim of establishing rapport with former students and the college and to have common programs which will be mutually beneficial.
+CETAA now has about 15,000 members and is increasing every year. Now, CETAA has chapters at Chicago, Dubai, Delhi, Kuwait, Bangalore, America and Kochi.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="{% static "/home/img/college.jpg" %}">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    <a name="contact"></a>
+    <div class="content-section-b">
+
+        <div class="container">
 
             <div class="row">
-                <!-- as seen on -->
-                <div class="span12 using-this">
-                    <h3>As Seen On</h3>
-                    <div class="using-this-container">
-                        <a class="using-this-google" href="#"></a>
-                        <a class="using-this-pinterest" href="#"></a>
-                        <a class="using-this-youtube" href="#"></a>
-                        <a class="using-this-google" href="#"></a>
-                        <a class="using-this-pinterest" href="#"></a>
-                    </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Contact</h2>
+                    <p class="lead">The Webmaster<br>email: wm.cetaa@gmail.com<br>College of Engineering Trivandrum</p>
                 </div>
-            </div> <!-- end row -->
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="{% static "/home/img/75annv.jpg" %}" alt="">
+                </div>
+            </div>
 
-        </div> <!-- end container -->
+        </div>
+        <!-- /.container -->
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="span4 from-twitter">
-                        <h3>From Twitter</h3>
-                        <div class="show-tweet"></div>
-                    </div>
-                    <div class="span4 flickr-photos">
-                        <h3>Flickr Photos</h3>
-                        <ul class="flickr-feed"></ul>
-                    </div>
-                    <div class="span4 contact-us">
-                        <h3>Contact Us</h3>
-                        <form action="assets/contact.php" method="post">
-                            <input type="text" name="name" class="name" placeholder="Name">
-                            <input type="text" name="email" class="email" placeholder="Email">
-                            <textarea name="message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div> <!-- end row -->
-                <div class="row">
-                    <div class="span12">
-                        <div class="social-links">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="dribbble" href="#"></a>
-                            <a class="pinterest" href="#"></a>
-                            <a class="googleplus" href="#"></a>
-                            <a class="skype" href="#"></a>
-                            <a class="youtube" href="#"></a>
-                            <a class="vimeo" href="#"></a>
-                            <a class="forrst" href="#"></a>
-                            <a class="email" href="#"></a>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-                <div class="row">
-                    <div class="span12 copyright">
-                        <p>Copyright &copy; 2013 - Produkta - Template by <a href="http://azmind.com" target="_blank">Azmind.com</a></p>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </footer>
+    </div>
+    <!-- /.content-section-b -->
+        <!-- /.container -->
 
+    </div>
 
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/jquery.tweet.js"></script>
-        <script src="assets/js/jflickrfeed.js"></script>
-        <script src="assets/js/jquery.countdown.js"></script>
-        <script src="assets/js/coming-soon-scripts.js"></script>
+    </div>
+    <!-- /.banner -->
 
-    </body>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                    </ul>
+                    <p class="copyright text-muted small">CETAA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static "/home/js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "/home/js/bootstrap.min.js" %}"></script>
+
+</body>
 
 </html>
-

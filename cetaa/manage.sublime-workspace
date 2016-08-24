@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"re",
+				"request"
+			],
+			[
+				"url",
+				"urlpatterns"
+			]
 		]
 	},
 	"buffers":
@@ -24,7 +32,7 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 126.0,
 		"history":
 		[
 		]
@@ -40,10 +48,15 @@
 	},
 	"file_history":
 	[
+		"/Users/Shameer/Downloads/produkta/coming-soon.html",
+		"/Users/Shameer/workspace/cetaa/cetaa/settings.py",
+		"/Users/Shameer/workspace/cetaa/home/views.py",
+		"/Users/Shameer/workspace/cetaa/home/urls.py",
+		"/Users/Shameer/workspace/cetaa/cetaa/urls.py"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -57,6 +70,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"backstre",
+			"logo",
+			"produkta",
+			"\"assets/",
+			"assets/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -64,6 +82,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"/static/home/assets/",
+			"/static/home/assets"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -81,11 +101,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -118,7 +138,7 @@
 	"project": "manage.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
