@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>CETAA</title>
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="{% static "/accounts/css/styles.css" %}">
+  <link rel="stylesheet" type="text/css" media="all" href="{% static "/accounts/css/switchery.min.css" %}">
+  <script type="text/javascript" src="{% static "/accounts/js/switchery.min.js" %}"></script>
+      <!-- Bootstrap Core CSS -->
+    <link href="{% static "/home/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static "/home/css/landing-page.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static "/home/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">CETAA</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#back2cet">Back2CET</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+  <h1>Register</h1>
+  
+  <form onsubmit="return false">
+  {% csrf_token %}
+    {{ form }}
+  <div class="col-2">
+    <label>
+      First Name
+      <input placeholder="What is your first name?" id="f_name" name="f_name" tabindex="1">
+    </label>
+  </div>
+    <div class="col-2">
+    <label>
+      Last Name
+      <input placeholder="What is your last name?" id="l_name" name="l_name" tabindex="1">
+    </label>
+  </div>
+    <div class="col-3">
+    <label>
+      Date of Birth
+      <input type="date" placeholder="23-05-1995" id="dob" name="dob">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Company
+      <input placeholder="Where do you currently work?" id="company" name="company" tabindex="2">
+    </label>
+  </div>
+  
+  <div class="col-3">
+    <label>
+      Phone Number
+      <input placeholder="What is the best # to reach you?" id="phone" name="phone" tabindex="3">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Email
+      <input placeholder="What is your e-mail address?" id="email" name="email" tabindex="4">
+    </label>
+  </div>
+  <div class="col-4">
+    <label>
+      Password
+      <input type="password" placeholder="Enter a password" id="password" name="password" tabindex="5">
+    </label>
+  </div>
+  <div class="col-4">
+    <label>
+      Verify Password
+      <input type="password" placeholder="Enter the password again" id="verify_password" name="verify_password" tabindex="6">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Branch
+      <select tabindex="5">
+        <option>Computer Science and Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Mechanical Engineering</option>
+        <option>Electrical and Electronics</option>
+        <option>Electronics and Communication</option>
+        <option>Applied Electronics</option>
+        <option>Architecture</option>
+        <option>Industrial Engineering</option>
+        <option>MCA</option>
+        <option>MBA</option>
+      </select>
+    </label>
+  </div>
+    <div class="col-2">
+    <label>
+      Course Studied
+      <select tabindex="7">
+        <option>BTech</option>
+        <option>BSC</option>
+        <option>MSC</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Course Type
+      <select tabindex="8">
+        <option>Regular</option>
+        <option>Evening</option>
+      </select>
+    </label>
+  </div>
+    <div class="col-3">
+    <label>
+      Year of Graduation
+      <input placeholder="2018" id="grad_year" name="grad_year" tabindex="9">
+    </label>
+  </div>
+    <div class="col-3 switch">
+    <label>E-mail Updates?</label>
+    <center style="position:relative;margin-bottom:8px;"><input type="checkbox" class="js-switch"></center>
+  </div>
+  <div class="col-2">
+    <label>
+      Residential Address
+      <input placeholder="CET, Sreekariyam, Trivandrum." id="residential_address" name="residential_address" tabindex="10">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Work Address
+      <input placeholder="CET, Sreekariyam, Trivandrum." id="work_address" name="work_address" tabindex="11">
+    </label>
+  </div>
+
+  <div class="col-submit">
+    <button class="submitbtn">Submit</button>
+  </div>
+  
+  </form>
+  </div>
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+</body>
+</html>
