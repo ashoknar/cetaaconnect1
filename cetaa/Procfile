@@ -1,1 +1,1 @@
-web: gunicorn cetaa.wgsi --log-file -
+web: gunicorn cetaa.wsgi --log-file -
